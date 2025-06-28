@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-white">
+    <div className="min-h-screen flex flex-col justify-center items-center">
       {/* 로고 */}
       <Image
         src="/logo.png"
