@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center h-[calc(100vh-4rem)]">
       {/* 로고 */}
       <Image
         src="/logo.png"
@@ -19,7 +19,7 @@ export default function LoginPage() {
         <h1 className="text-2xl font-bold text-gray-800  mb-6">로그인</h1>
         
         {/* 구글 로그인 버튼 */}
-        <button className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 px-4 border border-gray-300 rounded-lg shadow-sm flex items-center justify-center mb-4 transition duration-200">
+        <button className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 px-4 border border-gray-300  rounded-lg shadow-sm flex items-center justify-center mb-4 transition duration-200">
           <Image
             src="/assets/icons/google-icon.svg"
             alt="Google"
@@ -32,9 +32,9 @@ export default function LoginPage() {
         
         {/* 구분선 */}
         <div className="w-full flex items-center mb-4">
-          <div className="flex-1 border-t border-gray-300"></div>
+          <div className="flex-1 border-t border-gray-300 "></div>
           <span className="px-3 text-gray-500 text-sm">또는</span>
-          <div className="flex-1 border-t border-gray-300"></div>
+          <div className="flex-1 border-t border-gray-300 "></div>
         </div>
         
         {/* 기존 로그인 폼 */}
@@ -42,7 +42,7 @@ export default function LoginPage() {
           <input
             type="email"
             placeholder="이메일"
-            className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent "
+            className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900  placeholder-gray-500"
           />
           <Image 
             src="/assets/icons/user-icon.svg" 
@@ -56,7 +56,7 @@ export default function LoginPage() {
           <input
             type="password"
             placeholder="비밀번호"
-            className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent "
+            className="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white  text-gray-900  placeholder-gray-500"
           />
           <Image 
             src="/assets/icons/password-icon.svg" 
@@ -72,7 +72,7 @@ export default function LoginPage() {
         
         {/* 추가 링크들 */}
         <div className="w-full mt-6 text-center">
-          <a href="#" className="text-blue-600  hover:text-blue-800 text-sm">비밀번호를 잊으셨나요?</a>
+          <a href="#" className="text-blue-600  hover:text-blue-800  text-sm">비밀번호를 잊으셨나요?</a>
         </div>
         <div className="w-full mt-2 text-center">
           <span className="text-gray-600 text-sm">계정이 없으신가요? </span>

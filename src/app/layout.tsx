@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import "./globals.css";
-
-const geistSans = Geist({ 
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { HeaderWrapper } from "@/component/ui/HeaderWrapper";
 
 export const metadata: Metadata = {
   title: "혜택모아",
@@ -20,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200`}
-      >
-        <ThemeToggle />
-        {children}
+      <body className="antialiased transition-colors duration-200">
+        <div className="min-h-screen flex flex-col bg-white text-gray-900 transition-colors duration-200">
+          <HeaderWrapper />
+          <main className="flex-1">{children}</main>
+        </div>
       </body>
     </html>
   );
