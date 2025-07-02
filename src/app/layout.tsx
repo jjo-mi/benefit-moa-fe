@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { HeaderWrapper } from "@/component/ui/HeaderWrapper";
+import { HeaderWrapper } from "@/components/layout/HeaderWrapper";
 
 export const metadata: Metadata = {
   title: "혜택모아",
