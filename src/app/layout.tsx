@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="antialiased transition-colors duration-200">
         <div className="min-h-screen flex flex-col bg-white text-gray-900 transition-colors duration-200">
           <HeaderWrapper />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 p-4 ">{children}</main>
         </div>
       </body>
     </html>
