@@ -2,9 +2,9 @@
 
 export const Header = () => {
   return (
-    <header className="w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
+    <header className="w-full bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12">
           {/* 로고 영역 */}
           <div className="flex items-center">
             <h1 className="sr-only text-xl font-bold text-gray-900 dark:text-white">
@@ -12,7 +12,7 @@ export const Header = () => {
             </h1>
             <img src="/logo.png" alt="logo" className="w-10 h-10" />
           </div>  
-          
+    
           {/* 우측 영역 - 테마 스위치 */}
           <div className="flex items-center space-x-4">
           {/* 프로필 아이콘 */}

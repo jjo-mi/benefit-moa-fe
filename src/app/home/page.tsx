@@ -32,7 +32,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col p-4 items-center justify-center h-[calc(100vh-4rem)]">
       <h1 className="sr-only">혜택모아</h1>
-      <h2 className="text-3xl font-black mt-4 mb-4">
+      <h1 className="text-5xl  text-blue-600 mb-3">Benefit MoA</h1>
+    
+    {/* 추천키워드 */}
+      <h2 className="text-3xl font-black mt-4 mb-12">
         <span
           className="bg-gradient-to-r from-green-400 via-green-600 to-emerald-400 bg-clip-text text-transparent"
         >
@@ -50,7 +53,11 @@ export default function HomePage() {
         </span>{" "}
         어떤가요?
       </h2>
-      <div className="flex items-center space-x-4 my-4">
+
+      {/* 검색 섹션 */}
+      <div className="w-screen h-60 min-h-40 mb-4 px-10 bg-blue-200 flex flex-col items-center justify-center">
+      {/* 라디오 버튼 */}
+      <div className="flex items-center space-x-4 mb-7">
         <label className="flex items-center space-x-1">
           <input
             type="radio"
@@ -72,7 +79,10 @@ export default function HomePage() {
           <span className="text-gray-700 text-sm">맞춤검색</span>
         </label>
       </div>
-      <SearchInput />
+      {/* 검색 입력창 */}
+        <SearchInput />
+      </div>
+      {/* 인기 정책 게시판 */}
       <PopularPolicyBoard />
     </div>
   );

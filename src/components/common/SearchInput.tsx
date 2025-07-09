@@ -32,7 +32,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   };
 
   return (
-    <div className={`relative w-full ${className} boder`}>
+    <div className={`relative w-full ${className} `}>
       {/* 검색 아이콘 */}
       <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none z-10">
         <img 
@@ -50,7 +50,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
         onChange={(e) => setSearchValue(e.target.value)}
         onKeyDown={handleKeyPress}
         placeholder={placeholder}
-        className="w-full px-4 py-3 pl-12 pr-12 border-4 rounded-full focus:outline-none placeholder-gray-600 bg-white transition-all duration-300 hover:shadow-lg focus:shadow-xl"
+        className="w-full px-4 py-3 pl-12 pr-12  rounded-full focus:outline-none placeholder-gray-600 bg-white transition-all duration-300 hover:shadow-lg focus:shadow-xl"
         style={{
           borderImage: "linear-gradient(90deg, #16A34A, #2563EB) 1",
           borderRadius: "9999px",

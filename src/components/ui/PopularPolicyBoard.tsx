@@ -28,12 +28,12 @@ export default function PopularPolicyBoard() {
     : dummyPolicies.filter(p => p.category === selected);
 
   return (
-    <div className="w-full max-w-2xl mt-8 max-h-400 overflow-x-auto">
+    <div className="w-full max-w-2xl mt-8 max-h-300 overflow-x-auto">
       <div className="flex gap-2 mb-4 ">
         {categories.map(cat => (
           <button
             key={cat}
-            className={`px-4 py-2 rounded-full border ${selected === cat ? "bg-blue-500 text-white" : "bg-white text-gray-700"}`}
+            className={`px-4 py-2 rounded-full border border-blue-500 ${selected === cat ? "bg-blue-500 text-white" : "bg-white text-blue-500"}`}
             onClick={() => setSelected(cat)}
           >
             {cat}
