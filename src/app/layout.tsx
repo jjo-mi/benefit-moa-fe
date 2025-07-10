@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { HeaderWrapper } from "@/components/layout/HeaderWrapper";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "혜택모아",
@@ -15,9 +16,10 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className="antialiased transition-colors duration-200">
-        <div className="min-h-screen flex flex-col bg-white text-gray-900 transition-colors duration-200">
+        <div className="h-screen flex flex-col bg-white text-gray-900 transition-colors duration-200">
           <HeaderWrapper />
           <main className="flex-1 p-4 ">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
