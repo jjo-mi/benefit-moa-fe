@@ -29,7 +29,7 @@ export default function PopularPolicyBoard() {
 
   return (
     <div className="w-full max-w-2xl mt-8 max-h-300 overflow-x-auto">
-      <div className="flex gap-2 mb-4 ">
+      <div className="flex gap-2 mb-4 sticky top-0 z-10 bg-white py-2">
         {categories.map(cat => (
           <button
             key={cat}
